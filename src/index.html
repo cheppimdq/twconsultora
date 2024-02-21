@@ -18,26 +18,41 @@
     <body class="">
 
         <nav class="bg-black fixed top-0 w-full z-10">
-            <div class="container mx-auto p-4 flex justify-between items-center">
-                <a href="#" class="text-gray-100 hover:text-white">
-                    <span class="font-medium">SB Consultora</span>
-                </a>
-                <button class="menu-toggle block lg:hidden text-gray-100 hover:text-white focus:outline-none">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
-                    </svg>
-                </button>
-                <ul class="hidden lg:flex space-x-4 text-center">
-                    <li><a href="#" class="text-gray-300 hover:text-white">Inicio</a></li>
-                    <li><a href="./pages/derecho.html" class="text-gray-300 hover:text-white">Derecho</a></li>
-                    <li><a href="./pages/contaduria.html" class="text-gray-300 hover:text-white">Contaduría</a></li>
-                    <li><a href="./pages/seguros.html" class="text-gray-300 hover:text-white">Seguros</a></li>
-                    <li><a href="./pages/contacto.html" class="text-gray-300 hover:text-white">Contacto</a></li>
-                </ul>
+            <div class="container max-w-6xl mx-auto px-4">
+                <div class="flex justify-between items-center py-4"> <!-- Añadí la clase 'py-4' para ajustar el espaciado vertical -->
+                    <div>
+                        <a href="#" class="flex items-center text-gray-100 hover:text-white">
+                            <span class="font-medium">SB Consultora</span>
+                        </a>
+                    </div>
+                    <div class="hidden lg:flex items-center space-x-4">
+                        <a href="#" class="text-gray-300 hover:text-white">Inicio</a>
+                        <a href="./pages/derecho.html" class="text-gray-300 hover:text-white">Derecho</a>
+                        <a href="./pages/contaduria.html" class="text-gray-300 hover:text-white">Contaduría</a>
+                        <a href="./pages/seguros.html" class="text-gray-300 hover:text-white">Seguros</a>
+                        <a href="./pages/contacto.html" class="text-gray-300 hover:text-white">Contacto</a>
+                    </div>
+                    <div class="flex items-center lg:hidden">
+                        <button class="mobile-menu-button text-gray-100 hover:text-white">
+                            <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- mobile menu -->
+            <div class="flex flex-col items-center lg:hidden mobile-menu py-4"> <!-- Añadí la clase 'py-4' para ajustar el espaciado vertical -->
+                <a href="#" class="block text-gray-300 hover:text-white py-2 px-4">Inicio</a>
+                <a href="./pages/derecho.html" class="block text-gray-300 hover:text-white py-2 px-4">Derecho</a>
+                <a href="./pages/contaduria.html" class="block text-gray-300 hover:text-white py-2 px-4">Contaduría</a>
+                <a href="./pages/seguros.html" class="block text-gray-300 hover:text-white py-2 px-4">Seguros</a>
+                <a href="./pages/contacto.html" class="block text-gray-300 hover:text-white py-2 px-4">Contacto</a>
             </div>
         </nav>
-
-
+        
+        
+        
 
         <header class="relative h-screen">
             <video autoplay muted loop class="object-cover h-full w-full" src="../assets/video-sonrisa.mp4"></video>
@@ -55,7 +70,7 @@
         <footer>
         </footer>
 
-        <script src="./app.js"></script>
+        <script src="./app.js"></script><!-- APP -->
 
     </body>
 
