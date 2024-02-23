@@ -1,0 +1,32 @@
+name: Build and Deploy
+
+on:
+  push:
+    branches:
+      - main  # Ajusta esto según el nombre de tu rama principal
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
+
+    - name: Setup Node.js
+      uses: actions/setup-node@v2
+      with:
+        node-version: '14'  # Ajusta esto según la versión de Node.js que estás utilizando
+
+    - name: Install dependencies
+      run: npm install  # O ajusta esto según tu gestor de paquetes (por ejemplo, yarn)
+
+    - name: Build site
+      run: npm run build  # Ajusta esto según el comando de construcción de tu proyecto
+
+    - name: Deploy to GitHub Pages
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: ./src  # Directorio de origen para el despliegue
+        publish_branch: gh-pages  # Rama de destino para el despliegue
