@@ -66,79 +66,153 @@
             </div>
         </header>
 
-        <main>
+        <!-- LOGOS CLIENTES -->
+        <article class="bg-white py-8">
+            <div class="container mx-auto max-w-7xl px-6 lg:px-8">
+                <h2 class="text-center text-lg sm:text-xl lg:text-2xl xl:text-3xl font-semibold leading-8 text-gray-900">Trusted by the world’s most innovative teams</h2>
+                <div class="flex flex-wrap justify-evenly sm:flex-col items-center sm:gap-6 md:gap-8 lg:gap-12 xl:gap-16 mt-6 sm:mt-8 lg:mt-10">
+                    <img class="h-10 sm:h-12 md:h-16 lg:h-20 xl:h-24 w-auto object-contain mb-4 sm:mb-0" src="https://tailwindui.com/img/logos/158x48/transistor-logo-gray-900.svg" alt="Transistor">
+                    <img class="h-10 sm:h-12 md:h-16 lg:h-20 xl:h-24 w-auto object-contain mb-4 sm:mb-0" src="https://tailwindui.com/img/logos/158x48/reform-logo-gray-900.svg" alt="Reform">
+                    <img class="h-10 sm:h-12 md:h-16 lg:h-20 xl:h-24 w-auto object-contain mb-4 sm:mb-0" src="https://tailwindui.com/img/logos/158x48/tuple-logo-gray-900.svg" alt="Tuple">
+                    <img class="h-10 sm:h-12 md:h-16 lg:h-20 xl:h-24 w-auto object-contain mb-4 sm:mb-0" src="https://tailwindui.com/img/logos/158x48/savvycal-logo-gray-900.svg" alt="SavvyCal">
+                    <img class="h-10 sm:h-12 md:h-16 lg:h-20 xl:h-24 w-auto object-contain mb-4 sm:mb-0" src="https://tailwindui.com/img/logos/158x48/statamic-logo-gray-900.svg" alt="Statamic">
+                </div>
+            </div>
+        </article>
+
+        <!-- SOLO RELLENO -->
+        <main class="bg-gray-100 py-8">
+
+            <!-- Sección 1 -->
+            <section class="container mx-auto max-w-7xl px-4 py-8">
+                <h2 class="text-3xl font-bold text-gray-800 mb-4">Nuestra Consultora</h2>
+                <p class="text-lg text-gray-700">Descripción de tu consultora aquí...</p>
+            </section>
+        
+            <!-- Sección 2 -->
+            <section class="container mx-auto max-w-7xl px-4 py-8">
+                <h2 class="text-3xl font-bold text-gray-800 mb-4">Servicios</h2>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Servicio 1 -->
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-2">Servicio 1</h3>
+                        <p class="text-gray-700">Descripción del servicio 1...</p>
+                    </div>
+                    <!-- Servicio 2 -->
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-2">Servicio 2</h3>
+                        <p class="text-gray-700">Descripción del servicio 2...</p>
+                    </div>
+                    <!-- Servicio 3 -->
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-2">Servicio 3</h3>
+                        <p class="text-gray-700">Descripción del servicio 3...</p>
+                    </div>
+                </div>
+            </section>
+        
+            <!-- Sección 3 -->
+            <section class="container mx-auto max-w-7xl px-4 py-8">
+                <h2 class="text-3xl font-bold text-gray-800 mb-4">Clientes Satisfechos</h2>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Cliente 1 -->
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-2">Cliente 1</h3>
+                        <p class="text-gray-700">Testimonio del cliente 1...</p>
+                    </div>
+                    <!-- Cliente 2 -->
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-2">Cliente 2</h3>
+                        <p class="text-gray-700">Testimonio del cliente 2...</p>
+                    </div>
+                    <!-- Cliente 3 -->
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-2">Cliente 3</h3>
+                        <p class="text-gray-700">Testimonio del cliente 3...</p>
+                    </div>
+                </div>
+            </section>
+        
         </main>
 
-        <!-- LOGOS CLIENTES -->
-        <article class="bg-white py-8 sm:py-12 lg:py-16 xl:py-24">
+        <!-- EQUIPO -->
+<article class="bg-white py-8 sm:py-12">
+    <div class="container max-w-7xl mx-auto px-4 py-4"> 
 
-            <div class="container mx-auto max-w-7xl px-6 sm:px-8 lg:px-10 xl:px-12">
+        <div class="flex flex-col lg:flex-row justify-evenly items-start"> 
+
+            <!-- Miembro 1 -->
+            <div class="w-full lg:w-1/3 flex flex-col items-center px-4 py-4">
+                <img src="./assets/perfil-3.jpg" alt="Miembro 1" class="w-full object-cover">
+                <p class="text-center">Nombre del Miembro 1</p>
+                <div class="flex items-center justify-between space-x-1 gap-2">
+                    <!-- LINKEDIN -->
+                    <a href="https://www.linkedin.com/company/" class="text-black hover:text-white">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0v8.399h4.988v-10.131c0-7.88-8.922-7.593-11.018-3.714v-2.155z" />
+                        </svg>
+                    </a>
+                    <p class="text-sm">Abogado</p>
+                </div>
+            </div>
+
+            <!-- Miembro 2 -->
+            <div class="w-full lg:w-1/3 flex flex-col items-center px-4 py-4">
+                <img src="./assets/perfil-2.jpg" alt="Miembro 2" class="w-full object-cover">
+                <p class="text-center">Alejandro Di Lernia</p>
+                <div class="flex items-center justify-evenly space-x-1 gap-2">
+                    <!-- LINKEDIN -->
+                    <a href="https://www.linkedin.com/company/" class="text-blue-800 hover:text-blue-600">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0v8.399h4.988v-10.131c0-7.88-8.922-7.593-11.018-3.714v-2.155z"/>
+                        </svg>
+                    </a>
+                    <p class="text-sm">Contador Público</p>
+                </div>
+            </div>
+
+            <!-- Miembro 3 -->
+            <div class="w-full lg:w-1/3 flex flex-col items-center px-4 py-4">
+                <img src="./assets/perfil-1.jpg" alt="Miembro 3" class="w-full object-cover">
+                <p class="text-center">Pablo Meschino</p>
+                <div class="flex items-center justify-center space-x-1 gap-2">
+                    <!-- LINKEDIN -->
+                    <a href="https://www.linkedin.com/company/" class="text-black hover:text-white">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0v8.399h4.988v-10.131c0-7.88-8.922-7.593-11.018-3.714v-2.155z" />
+                        </svg>
+                    </a>
+                    <p class="text-sm">Productor de Seguros</p>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</article>
+
+
+        
+        <!-- NUMEROS -->
+        <article class="bg-white py-8">
+            <div class="container mx-auto max-w-7xl px-6 lg:px-8">
                 <h2 class="text-center text-lg sm:text-xl lg:text-2xl xl:text-3xl font-semibold leading-8 text-gray-900">Trusted by the world’s most innovative teams</h2>
-                <div class="flex flex-wrap justify-evenly sm:flex-col items-center gap-6 sm:gap-8 md:gap-10 lg:gap-12 xl:gap-16 mt-6 sm:mt-8 lg:mt-10">
-                    <img class="h-10 sm:h-12 md:h-16 lg:h-20 xl:h-24 w-auto object-contain" src="https://tailwindui.com/img/logos/158x48/transistor-logo-gray-900.svg" alt="Transistor">
-                    <img class="h-10 sm:h-12 md:h-16 lg:h-20 xl:h-24 w-auto object-contain" src="https://tailwindui.com/img/logos/158x48/reform-logo-gray-900.svg" alt="Reform">
-                    <img class="h-10 sm:h-12 md:h-16 lg:h-20 xl:h-24 w-auto object-contain" src="https://tailwindui.com/img/logos/158x48/tuple-logo-gray-900.svg" alt="Tuple">
-                    <img class="h-10 sm:h-12 md:h-16 lg:h-20 xl:h-24 w-auto object-contain" src="https://tailwindui.com/img/logos/158x48/savvycal-logo-gray-900.svg" alt="SavvyCal">
-                    <img class="h-10 sm:h-12 md:h-16 lg:h-20 xl:h-24 w-auto object-contain" src="https://tailwindui.com/img/logos/158x48/statamic-logo-gray-900.svg" alt="Statamic">
-                </div>
-            </div>
-
-        </article>
-
-
-        <article class="bg-white py-8 sm:py-12 lg:py-16 xl:py-24">
-            <div class="container max-w-7xl mx-auto px-4 py-4"> 
-        
-                <div class="flex flex-col lg:flex-row justify-evenly items-start"> 
-        
-                    <!-- Miembro 1 -->
-                    <div class="flex flex-col items-center px-4 py-4">
-                        <img src="./assets/perfil-3.jpg" alt="Miembro 1" class="w-full object-cover">
-                        <p class="text-center">Nombre del Miembro 1</p>
-                        <div class="flex items-center justify-center space-x-1">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-blue-600" fill="currentColor" viewBox="0 0 24 24">
-                                <path d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0v8.399h4.988v-10.131c0-7.88-8.922-7.593-11.018-3.714v-2.155z" />
-                            </svg>
-                            <p class="text-sm">Abogado</p>
-                        </div>
+                <dl class="flex flex-wrap justify-between sm:flex-col items-center gap-6 sm:gap-8 md:gap-10 lg:gap-12 xl:gap-16 mt-6 sm:mt-8 lg:mt-10">
+                    <div class="mx-auto flex max-w-xs flex-col gap-y-4">
+                        <dt class="text-base leading-7 text-gray-600">Transactions every 24 hours</dt>
+                        <dd class="order-first text-3xl font-semibold tracking-tight text-gray-900 sm:text-5xl">44 million</dd>
                     </div>
-        
-                    <!-- Miembro 2 -->
-                    <div class="flex flex-col items-center px-4 py-4">
-                        <img src="./assets/perfil-2.jpg" alt="Miembro 2" class="w-full object-cover">
-                        <p class="text-center">Alejandro Di Lernia</p>
-                        <div class="flex items-center justify-center space-x-1">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-blue-600" fill="currentColor" viewBox="0 0 24 24">
-                                <path d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0v8.399h4.988v-10.131c0-7.88-8.922-7.593-11.018-3.714v-2.155z" />
-                            </svg>
-                            <p class="text-sm">Contador Público</p>
-                        </div>
+                    <div class="mx-auto flex max-w-xs flex-col gap-y-4">
+                        <dt class="text-base leading-7 text-gray-600">Assets under holding</dt>
+                        <dd class="order-first text-3xl font-semibold tracking-tight text-gray-900 sm:text-5xl">$119 trillion</dd>
                     </div>
-        
-                    <!-- Miembro 3 -->
-                    <div class="flex flex-col items-center px-4 py-4">
-                        <img src="./assets/perfil-1.jpg" alt="Miembro 3" class="w-full object-cover">
-                        <p class="text-center">Pablo Meschino</p>
-                        <div class="flex items-center justify-center space-x-1">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-blue-600" fill="currentColor" viewBox="0 0 24 24">
-                                <path d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0v8.399h4.988v-10.131c0-7.88-8.922-7.593-11.018-3.714v-2.155z" />
-                            </svg>
-                            <p class="text-sm">Productor de Seguros</p>
-                        </div>
+                    <div class="mx-auto flex max-w-xs flex-col gap-y-4">
+                        <dt class="text-base leading-7 text-gray-600">New users annually</dt>
+                        <dd class="order-first text-3xl font-semibold tracking-tight text-gray-900 sm:text-5xl">46,000</dd>
                     </div>
-        
-                </div>
-        
+                </dl>
             </div>
         </article>
-        
-        
-        
-        
-
-
-
-        
 
         <!-- GOOGLE MAPS -->
         <article class="relative w-full h-96">
@@ -148,7 +222,8 @@
             </iframe>
         </article>
 
-        <footer class="bg-black bottom-0 w-full z-10">
+        <!-- FOOTER -->
+        <footer class="bg-black bottom-0 w-full z-10 py-8">
             <div class="container max-w-7xl mx-auto px-4 py-4">
 
                 <!-- PRIMERA FILA -->
@@ -201,9 +276,7 @@
                 </div>
 
                 <!-- LINEA DIVISORA -->
-                <div class="my-4">
-                    <hr class="w-full border-t-2 border-gray-700">
-                </div>
+                <div class="my-16 border-t border-gray-800"></div>
 
                 <!-- SEGUNDA FILA -->
                 <div class="flex justify-between items-center mt-4">
