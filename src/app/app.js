@@ -29,7 +29,7 @@ let currentSlide = 1;
             document.querySelectorAll('.slide').forEach(slide => {
                 slide.style.display = 'none';
             });
-            document.getElementById(`slide${slideNumber}`).style.display = 'block';
+            document.getElementById(`slide${slideNumber}`).style.display = 'flex';
         }
 
         function nextSlide() {
