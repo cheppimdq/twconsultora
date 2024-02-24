@@ -16,7 +16,7 @@
 
     <body>
 
-        <nav class="bg-black fixed top-0 w-full z-10">
+        <nav id="navbar" class="fixed top-0 w-full z-10 bg-transparent transition duration-1000 ease-in-out">
 
             <div class="container max-w-7xl mx-auto px-4">
                 <div class="flex justify-between items-center py-4">
@@ -56,12 +56,42 @@
         </nav>
 
         <!-- HEADER -->
-        <header class="relative h-screen">
-            <video autoplay muted loop class="object-cover h-full w-full" src="./assets/video-sonrisa.mp4"></video>
-            <div class="absolute inset-0 flex items-center justify-center">
-                <div class="text-center  text-white">
-                    <h1 class="text-4xl font-bold">SB Consultora</h1>
-                    <p class="mt-2 text-lg">Texto adicional debajo del h1</p>
+        <header class="container-fluid">
+            <div class="flex h-96 overflow-hidden relative">
+                <div id="slide1" class="slide w-full relative">
+                    <div class="overlay absolute top-0 left-0 w-full h-full flex flex-col justify-center items-center text-white">
+                        <h1 class="text-4xl font-bold">SB Consultora</h1>
+                        <p class="mt-2 text-lg">Texto adicional debajo del h1</p>
+                    </div>
+                    <video class="w-full h-full object-cover" src="./assets/video-sonrisa.mp4" alt="..." autoplay muted loop playsinline> <!-- esto es una prueba -->
+                </div>
+                <div id="slide2" class="slide w-full hidden">
+                    <div class="overlay absolute top-0 left-0 w-full h-full flex flex-col justify-center items-center text-white">
+                        <h1 class="text-4xl font-bold">SB Consultora</h1>
+                        <p class="mt-2 text-lg">Texto adicional debajo del h1</p>
+                    </div>
+                    <img class="w-full h-full object-cover" src="./assets/img/ley-1.jpg" alt="...">
+                </div>
+                <div id="slide3" class="slide w-full hidden">
+                    <div class="overlay absolute top-0 left-0 w-full h-full flex flex-col justify-center items-center text-white">
+                        <h1 class="text-4xl font-bold">SB Consultora</h1>
+                        <p class="mt-2 text-lg">Texto adicional debajo del h1</p>
+                    </div>
+                    <img class="w-full h-full object-cover" src="./assets/img/dolar-1.jpg" alt="...">
+                </div>
+                <div id="slide4" class="slide w-full hidden">
+                    <div class="overlay absolute top-0 left-0 w-full h-full flex flex-col justify-center items-center text-white">
+                        <h1 class="text-4xl font-bold">SB Consultora</h1>
+                        <p class="mt-2 text-lg">Texto adicional debajo del h1</p>
+                    </div>
+                    <img class="w-full h-full object-cover" src="./assets/img/trabajo-2.jpg" alt="...">
+                </div>
+                <div id="slide5" class="slide w-full hidden">
+                    <div class="overlay absolute top-0 left-0 w-full h-full flex flex-col justify-center items-center text-white">
+                        <h1 class="text-4xl font-bold">SB Consultora</h1>
+                        <p class="mt-2 text-lg">Texto adicional debajo del h1</p>
+                    </div>
+                    <img class="w-full h-full object-cover" src="./assets/img/mardel-1.jpg" alt="...">
                 </div>
             </div>
         </header>
