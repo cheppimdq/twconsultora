@@ -1,17 +1,24 @@
 // CAMBIO DE COLOR NAV
-window.addEventListener('scroll', function() {
-    var navbar = document.getElementById('navbar');
-    var scrollThreshold = navbar.offsetHeight; // Altura del nav
-  
-    if (window.scrollY > scrollThreshold) {
-      navbar.classList.remove('bg-transparent');
-      navbar.classList.add('bg-black', 'bg-opacity-75'); // Cambia la opacidad aquí (de 0 a 100)
-    } else {
-      navbar.classList.remove('bg-black', 'bg-opacity-75');
-      navbar.classList.add('bg-transparent');
-    }
-  });
-  
+// Verificar el tamaño de la pantalla antes de ejecutar el JavaScript
+if (window.matchMedia("(max-width: 767px)").matches) {
+    // Pantallas pequeñas: agregar clase bg-black en todo momento
+    document.getElementById('navbar').classList.remove('bg-transparent');
+    document.getElementById('navbar').classList.add('bg-black');
+} else {
+    // Pantallas grandes: agregar event listener para cambiar de bg-transparent a bg-black al hacer scroll
+    window.addEventListener('scroll', function() {
+        var navbar = document.getElementById('navbar');
+        var scrollThreshold = 50; // Definir umbral de desplazamiento aquí
+
+        if (window.scrollY > scrollThreshold) {
+            navbar.classList.remove('bg-transparent');
+            navbar.classList.add('bg-black'); // Cambiar a color negro cuando se haga scroll
+        } else {
+            navbar.classList.remove('bg-black');
+            navbar.classList.add('bg-transparent');
+        }
+    });
+}
 
 // BOTON Y ULS
 document.addEventListener("DOMContentLoaded", function() {
