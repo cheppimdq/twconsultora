@@ -1,7 +1,7 @@
 // CAMBIO DE COLOR NAV
 // Verificar el tamaño de la pantalla antes de ejecutar el JavaScript
 if (window.matchMedia("(max-width: 767px)").matches) {
-    // Pantallas pequeñas: agregar clase bg-black en todo momento
+    // Pantallas pequeñas: quita clase traspaente y agrega clase bg-black en todo momento
     document.getElementById('navbar').classList.remove('bg-transparent');
     document.getElementById('navbar').classList.add('bg-black');
 } else {
